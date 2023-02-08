@@ -1,0 +1,76 @@
+body {
+  background-color: lightblue;
+  font-family: "Your Modern Font";
+  font-color: white;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  margin-left: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work {
+  width: calc(33.33% - 20px);
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-left {
+  width: calc(50% - 20px);
+}
+
+.footer-right {
+  width: calc(50% - 20px);
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-links a {
+  margin-right: 20px;
+}
+
+.footer-links i {
+  margin-right: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
