@@ -1,220 +1,234 @@
 body {
-    font-family: "Cooper Black", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(175, 180, 204);
+  font-family: "Cooper Black", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(175, 180, 204);
 }
-  
+
 header {
-    background: #333;
-    color: #fff;
-    padding: 0px;
-    text-align: center;
-  }
-  
+  background: #333;
+  color: #fff;
+  padding: 0px;
+  text-align: center;
+}
+
 nav {
-    background: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
 }
 
 @media (max-width: 767px) {
-    nav ul {
-        flex-direction: column;
-    }
-    nav li {
-        margin: 10px 0;
-    }
+  nav ul {
+      flex-direction: column;
+  }
+  nav li {
+      margin: 10px 0;
+  }
 }
 
 main {
-    display: grid;
-    justify-content: center;
-    text-align: center;
+  display: grid;
+  justify-content: center;
+  text-align: center;
 }
 
 .quote {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    background: #f2f2f2;
-    padding: 20px;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .quote img {
-    margin: 0 auto;
-    border-radius: 30px;
-    border-color: black;
-    border-style: solid;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 66.666%; /* updated */
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .quote p {
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  @media (max-width: 767px) {
-    .quote {
-      grid-template-columns: 1fr;
-    }
-  
-    .quote p {
-      font-size: 12px;
-    }
-  }
-  
-  
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+}
 
+.quote img {
+  margin: 0 auto;
+  border-radius: 30px;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 66.666%;
+  transition: all 0.5s ease-in-out;
+}
+
+.quote img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
+}
+
+.quote p {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.quote .quote-icons img {
+  align-self: center;
+  max-width: 60px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .quote {
+    grid-template-columns: 1fr;
+  }
+  .quote p {
+    font-size: 12px;
+  }
+}
 
 #works h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        transition: all 0.5s ease-in-out;
-    }
-    
-    .works {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 20px;
-        text-align: center;
-    }
-    
-    .work {
-        background: #f2f2f2;
-        border-radius: 40px;
-        padding: 30px;
-        margin: 10px;
-        transition: all 0.5s ease-in-out;
-    }
-    
-    .work img {
-        max-width: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 150px;
-        width: 150px;
-        margin-bottom: 20px;
-        transition: all 0.5s ease-in-out;
-        border-radius: 10px;
-        border-color: black;
-        border-style: solid;
-    }
+  text-align: center;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+}
 
-    #contact {
-        display: grid;
-        background: #f2f2f2;
-        padding: 20px;
-        width: 100%;
-        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-        grid-gap: 10px;
-        justify-content: center;
-        }
-        
-        .contact-left, .contact-right {
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        }
-        
-        @media (min-width: 768px) {
-        .contact-left, .contact-right {
-        width: 50%;
-        }
-        }
-        
-        .contact-left {
-        grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
-        grid-gap: 10px;
-        }
-        
-        .contact-right {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        }
-        
-        .contact-right img {
-        margin: 0 auto;
-        border-radius: 30px;
-        border-color: black;
-        border-style: solid;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        height: 400px;
-        transition: all 0.5s ease-in-out;
-        }
-        
-        .contact-item {
-        display: grid;
-        align-items: center;
-        margin-bottom: 10px;
-        grid-template-columns: auto 1fr;
-        grid-gap: 10px;
-        }
-        
-        .contact-item i {
-        font-size: 20px;
-        }
-        
-        .contact-item span {
-        font-weight: bold;
-        }
-        
-        .contact-icons {
-        display: grid;
-        align-items: center;
-        margin-top: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-        grid-gap: 10px;
-        }
-        
-        .contact-icons a {
-        color: #333;
-        font-size: 20px;
-        }
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
-footer {
-    background: #333;
-    color: #fff;
+.work {
+  background: #f2f2f2;
+  border-radius: 40px;
+  padding: 30px;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.work img {
+  max-width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+}
+
+@media (max-width: 767px) {
+  .works {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-left {
+  text-align: center;
+  align-items: center;
+}
+
+.contact-right img {
+  margin: 0 auto;
+  border-radius: 30px;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 66.666%;
+  max-width: 300px;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-right img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.contact-item i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contact-icons a img {
+  max-width: 60px;
+  margin-right: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-icons a:hover {
+  transform: scale(1.1);
+  color: #555;
+}
+
+@media (max-width: 767px) {
+  .contact-left, .contact-right {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-right {
     display: flex;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
     flex-direction: column;
     align-items: center;
+  }
+  
+  .contact-item i {
+    font-size: 12px;
+  }
+}
+
+
+
+footer {
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media only screen and (min-width:768px) {
   footer {
-    flex-direction: row;
+  flex-direction: row;
   }
 }
